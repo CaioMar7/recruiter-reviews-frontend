@@ -23,7 +23,7 @@ export function Register() {
               <IconInput icon={RiLockPasswordLine} placeholder="Confirm Password" />
             </div>
 
-            <button className='rounded text-white h-10 font-bold bg-sky-700'> Entrar </button>
+            <button className='rounded text-white h-10 font-bold bg-sky-700'> Criar conta </button>
             <p className='text-sky-700 font-bold mb-8 underline text-sm cursor-pointer'> <a href="/"> Já possui conta? Se faça login clicando aqui </a> </p>
           </form>
         </main>

@@ -20,7 +20,7 @@ export function Login() {
               <IconInput icon={RiLockPasswordLine} placeholder="Password" />
             </div>
 
-            <button className='rounded text-white h-10 font-bold bg-sky-700'> Entrar </button>
+            <a className='rounded text-white h-10 font-bold bg-sky-700 flex items-center justify-center' href="/dashboard"> Entrar </a>
             <p className='text-sky-700 font-bold mb-8 underline text-sm cursor-pointer'> <a href="/register"> Não possui conta? Se cadastre clicando aqui </a> </p>
           </form>
         </main>
