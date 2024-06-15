@@ -6,7 +6,7 @@ import { Register } from "../pages/Register";
 export const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/login" element={<Login/>}/>
+            <Route path="/" element={<Login/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
             <Route path="/register" element={<Register/>}/>
         </Routes>

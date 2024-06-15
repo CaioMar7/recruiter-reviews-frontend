@@ -1,6 +1,6 @@
 
 import { IconInput } from "../../components/IconInput";
-import { VscAccount } from "react-icons/vsc";
+import { MdEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import Hero from "../../assets/6415568_26081.svg"
 
@@ -11,12 +11,12 @@ export function Login() {
       <div className="w-screen h-screen border-2 bg-sky-100 overflow-hidden">
         <main className="flex justify-center items-center h-full">
 
-          <form className='flex flex-col justify-between text-center h-4/6 md:w-2/6 border-2 border-sky-300  shadow-md py-4 px-8 bg-white rounded'>
+          <form className='flex flex-col justify-between text-center h-4/6 md:w-2/6  shadow-md py-4 px-8 bg-white rounded'>
 
             <img src={Hero} className='h-72 object-contain'/>
 
             <div className='space-y-2 md:text-xl'>
-              <IconInput icon={VscAccount} placeholder="Email" />
+              <IconInput icon={MdEmail} placeholder="Email" />
               <IconInput icon={RiLockPasswordLine} placeholder="Password" />
             </div>
 
