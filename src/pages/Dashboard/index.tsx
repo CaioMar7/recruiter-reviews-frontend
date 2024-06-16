@@ -10,7 +10,14 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 
 
-
+const candidates = [
+  {name: "Caio Marques", vaga: "Analista de Recursos Humanos", data: "26/07"},
+  {name: "Caio Marques", vaga: "Analista de Recursos Humanos", data: "26/07"},
+  {name: "Caio Marques", vaga: "Analista de Recursos Humanos", data: "26/07"},
+  {name: "Caio Marques", vaga: "Analista de Recursos Humanos", data: "26/07"},
+  {name: "Caio Marques", vaga: "Analista de Recursos Humanos", data: "26/07"},
+  {name: "Caio Marques", vaga: "Analista de Recursos Humanos", data: "26/07"}
+]
 
 
 
@@ -45,60 +52,21 @@ export function Dashboard() {
               </header>
               <section className="h-full overflow-y-auto pb-20 ">
                 <ul className="">
-                  <li className="p-4 border-b-2 border-sky-50">
-                    <h2 className="text-xl font-bold uppercase"> Nome: Caio Marques </h2>
-                    <h3> Vaga: Analista de Recursos Humanos </h3>
-                    <p> Data da entrevista: 26/07 </p>
-                    <div className="flex gap-4 mt-4">
-                      <button className="bg-sky-100 text-xl" > Avaliar </button>
-                      <button className="bg-sky-100 text-xl" > Ver avaliação </button>
-                    </div>
-                  </li>
-                  <li className="p-4 border-b-2 border-sky-50">
-                    <h2 className="text-xl font-bold uppercase"> Nome: Caio Marques </h2>
-                    <h3> Vaga: Analista de Recursos Humanos </h3>
-                    <p> Data da entrevista: 26/07 </p>
-                    <div className="flex gap-4 mt-4">
-                      <button className="bg-sky-100 text-xl" > Avaliar </button>
-                      <button className="bg-sky-100 text-xl" > Ver avaliação </button>
-                    </div>
-                  </li>
-                  <li className="p-4 border-b-2 border-sky-50">
-                    <h2 className="text-xl font-bold uppercase"> Nome: Caio Marques </h2>
-                    <h3> Vaga: Analista de Recursos Humanos </h3>
-                    <p> Data da entrevista: 26/07 </p>
-                    <div className="flex gap-4 mt-4">
-                      <button className="bg-sky-100 text-xl" > Avaliar </button>
-                      <button className="bg-sky-100 text-xl" > Ver avaliação </button>
-                    </div>
-                  </li>
-                  <li className="p-4 border-b-2 border-sky-50">
-                    <h2 className="text-xl font-bold uppercase"> Nome: Caio Marques </h2>
-                    <h3> Vaga: Analista de Recursos Humanos </h3>
-                    <p> Data da entrevista: 26/07 </p>
-                    <div className="flex gap-4 mt-4">
-                      <button className="bg-sky-100 text-xl" > Avaliar </button>
-                      <button className="bg-sky-100 text-xl" > Ver avaliação </button>
-                    </div>
-                  </li>
-                  <li className="p-4 border-b-2 border-sky-50">
-                    <h2 className="text-xl font-bold uppercase"> Nome: Caio Marques </h2>
-                    <h3> Vaga: Analista de Recursos Humanos </h3>
-                    <p> Data da entrevista: 26/07 </p>
-                    <div className="flex gap-4 mt-4">
-                      <button className="bg-sky-100 text-xl" > Avaliar </button>
-                      <button className="bg-sky-100 text-xl" > Ver avaliação </button>
-                    </div>
-                  </li>
-                  <li className="p-4 border-b-2 border-sky-50">
-                    <h2 className="text-xl font-bold uppercase"> Nome: Caio Marques </h2>
-                    <h3> Vaga: Analista de Recursos Humanos </h3>
-                    <p> Data da entrevista: 26/07 </p>
-                    <div className="flex gap-4 mt-4">
-                      <button className="bg-sky-100 text-xl" > Avaliar </button>
-                      <button className="bg-sky-100 text-xl" > Ver avaliação </button>
-                    </div>
-                  </li>
+
+                  {
+                    candidates.map( candidate => (
+                      <li className="p-4 border-b-2 border-sky-50">
+                      <h2 className="text-xl font-bold uppercase"> {candidate.name} </h2>
+                      <h3> Vaga: {candidate.vaga} </h3>
+                      <p> Data da entrevista: {candidate.data} </p>
+                      <div className="flex gap-4 mt-4">
+                        <button className="bg-sky-100 text-xl" > Avaliar </button>
+                        <button className="bg-sky-100 text-xl" > Ver avaliação </button>
+                      </div>
+                    </li>
+                    ))
+                  }
+     
                 </ul>
               </section>
             </div>
